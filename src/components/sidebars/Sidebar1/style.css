@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.material-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1a1a2e;
+    color: white;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.toggle-btn .material-icons {
+    font-size: 28px;
+}
+
+.material-sidebar.collapsed {
+    width: 90px;
+}
+
+.material-sidebar.expanded {
+    width: 280px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-nav {
+    padding-top: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.submenu {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 0;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.submenu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.submenu-icon {
+    font-size: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.submenu-label {
+    font-size: 0.9rem;
+}
+
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.material-icons.text-sm {
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.material-icons.sidebar-icon {
+    font-size: 24px;
+    color: white;
+}
+
+.sidebar-label {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}

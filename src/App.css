@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #10b981;
+  --text-color: #f9fafb;
+  --background-color: #1f2937;
+  --card-background: #2f3544;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
