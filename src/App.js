@@ -9,6 +9,8 @@ import Accordion3 from "./components/accordions/Accordion3/Accordion3";
 import Accordion4 from "./components/accordions/Accordion4/Accordion4";
 import Sidebar1 from "./components/sidebars/Sidebar1/Sidebar1";
 import Sidebar2 from "./components/sidebars/Sidebar2/Sidebar2";
+import Sidebar3 from "./components/sidebars/Sidebar3/Sidebar3";
+import Sidebar4 from "./components/sidebars/Sidebar4/Sidebar4";
 
 const showcase = [
   {
@@ -65,6 +67,22 @@ const showcase = [
     description: "Premium Floating Sidebar - Glassmorphism Design",
     path: "/sidebars/Sidebar2",
     element: <Sidebar2 />,
+  },
+
+  {
+    id: 8,
+    name: "Sidebar3",
+    description: "Vertical Modern Tabs - TikTok Ready Animations!",
+    path: "/sidebars/Sidebar3",
+    element: <Sidebar3 />,
+  },
+
+  {
+    id: 9,
+    name: "Sidebar4",
+    description: "Category Explorer - Premium Mesh Design!",
+    path: "/sidebars/Sidebar4",
+    element: <Sidebar4 />,
   },
 ];
 

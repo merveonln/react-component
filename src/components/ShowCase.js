@@ -7,7 +7,7 @@ export default function ShowCase({ showcase }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
-  const itemsPerPage = 4; 
+  const itemsPerPage = 8; 
 
   const filteredShowcase = showcase.filter((item) =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
