@@ -1,7 +1,6 @@
 import React from 'react';
 import './footer.css';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-import logo from '../../../logo.png';
 
 const index = () => {
   return (
@@ -9,7 +8,7 @@ const index = () => {
       <div className="footer-container">
         <div className="footer-left">
           <a href="/">
-            <img src={logo} alt="Merve Önalan" className="footer-logo" />
+            <img src="/logo.png" alt="Merve Önalan" className="footer-logo" />
           </a>
         </div>
 

@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
+# React Components Library - Accordions, Sidebars, Todo & More
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://merveonln.github.io/react-component/sitemap.xml
