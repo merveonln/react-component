@@ -1,69 +1,271 @@
+/* ========================================
+   ACCORDION 1 - MODERN GRADIENT DESIGN
+   ======================================== */
+
+.one-accordion-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
 .one-accordion-container {
-    width: 100%;
-    max-width: 700px;
-    margin: 30px auto;
-    font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
+/* Accordion Item */
 .one-accordion {
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 10px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+.one-accordion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.one-accordion.one-active {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
 .one-accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
-    padding: 15px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 16px;
 }
 
 .one-accordion-header:hover {
-    background: linear-gradient(135deg, #5a0fb5, #1e63d7);
+  background: rgba(255, 255, 255, 0.08) !important;
 }
 
-.one-accordion-header .icon {
-    transform: rotate(0deg);
-    font-size: 20px;
-    font-weight: bold;
-    transition: transform 0.4s ease-in-out, color 0.3s ease-in-out;
+.one-header-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
 }
 
-.one-accordion-header.open .icon {
-    transform: rotate(360deg);
+/* Icon Box */
+.one-icon-box {
+  min-width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.one-accordion-header .icon:hover {
-    color: #ff6b6b;
-    transform: scale(1.2);
+.one-accordion:hover .one-icon-box {
+  transform: scale(1.05) rotate(5deg);
 }
 
+.one-accordion.one-active .one-icon-box {
+  animation: one-icon-bounce 0.6s ease-out;
+}
+
+@keyframes one-icon-bounce {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(10deg);
+  }
+}
+
+.one-icon {
+  font-size: 28px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Title Group */
+.one-title-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.one-accordion-header h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  transition: all 0.3s ease;
+}
+
+.one-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.one-accordion-header:hover h3 {
+  transform: translateX(4px);
+}
+
+/* Toggle Icon */
+.one-icon-toggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.one-icon-toggle svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.one-icon-toggle.one-rotated {
+  transform: rotate(180deg);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.one-accordion-header:hover .one-icon-toggle {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Content */
 .one-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    background-color: #f7f7f7;
-    padding: 0 20px;
-    transition: max-height 0.4s ease, padding 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.one-accordion-content.open {
-    max-height: 200px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #ddd;
+.one-accordion-content.one-open {
+  max-height: 300px;
 }
 
-.one-accordion-content p {
-    margin: 0;
+.one-content-inner {
+  position: relative;
+  padding: 0 24px 24px 98px;
+  animation: one-fade-in 0.5s ease-out;
+}
+
+@keyframes one-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.one-content-decorator {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.one-content-inner p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+}
+
+/* Bottom Line */
+.one-bottom-line {
+  height: 3px;
+  width: 0;
+  animation: one-line-expand 0.6s ease-out forwards;
+}
+
+@keyframes one-line-expand {
+  to {
+    width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .one-accordion-wrapper {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .one-accordion-header {
+    padding: 16px 18px;
+  }
+
+  .one-icon-box {
+    min-width: 48px;
+    height: 48px;
+  }
+
+  .one-icon {
+    font-size: 24px;
+  }
+
+  .one-accordion-header h3 {
+    font-size: 17px;
+  }
+
+  .one-subtitle {
+    font-size: 12px;
+  }
+
+  .one-content-inner {
+    padding: 0 18px 18px 78px;
+  }
+
+  .one-content-inner p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .one-header-left {
+    gap: 14px;
+  }
+
+  .one-icon-box {
+    min-width: 44px;
+    height: 44px;
+  }
+
+  .one-icon {
+    font-size: 20px;
+  }
+
+  .one-accordion-header h3 {
     font-size: 16px;
-    color: #333;
-    line-height: 1.6;
+  }
+
+  .one-content-inner {
+    padding: 0 16px 16px 70px;
+  }
 }
