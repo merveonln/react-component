@@ -13,6 +13,7 @@ import Sidebar2 from "./components/sidebars/Sidebar2/Sidebar2";
 import Sidebar3 from "./components/sidebars/Sidebar3/Sidebar3";
 import Sidebar4 from "./components/sidebars/Sidebar4/Sidebar4";
 import WeatherPage from "./components/weather/WeatherPage";
+import Button1 from "./components/buttons/Button1/Button1";
 
 const showcase = [
   {
@@ -100,6 +101,13 @@ const showcase = [
     description: "Search and copy emojis easily",
     path: "/emoji-search",
     element: <EmojiSearchApp />,
+  },
+  {
+    id: 12,
+    name: "Button1",
+    description: "Premium Glassmorphism Button - TikTok Ready!",
+    path: "/buttons/Button1",
+    element: <Button1 />,
   }
 ];
 
