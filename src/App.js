@@ -11,10 +11,19 @@ import Sidebar1 from "./components/sidebars/Sidebar1/Sidebar1";
 import Sidebar2 from "./components/sidebars/Sidebar2/Sidebar2";
 import Sidebar3 from "./components/sidebars/Sidebar3/Sidebar3";
 import Sidebar4 from "./components/sidebars/Sidebar4/Sidebar4";
+import WeatherPage from "./components/weather/WeatherPage";
 
 const showcase = [
   {
     id: 1,
+    name: "Weather",
+    description: "7-day weather forecast for cities in Türkiye",
+    path: "/weather",
+    element: <WeatherPage />,
+  },
+
+  {
+    id: 2,
     name: "Todo",
     description: "Manage your tasks efficiently",
     path: "/todos/Todo1",
@@ -22,7 +31,7 @@ const showcase = [
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Accordion1",
     description: "Manage your tasks efficiently",
     path: "/accordions/Accordion1",
@@ -30,7 +39,7 @@ const showcase = [
   },
   
   {
-    id: 3,
+    id: 4,
     name: "Accordion2",
     description: "Manage your tasks efficiently",
     path: "/accordions/Accordion2",
@@ -38,7 +47,7 @@ const showcase = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Accordion3",
     description: "Manage your tasks efficiently",
     path: "/accordions/Accordion3",
@@ -46,7 +55,7 @@ const showcase = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Accordion4",
     description: "Premium Glassmorphism Accordion - TikTok Ready!",
     path: "/accordions/Accordion4",
@@ -54,7 +63,7 @@ const showcase = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Sidebar1",
     description: "Manage your tasks efficiently",
     path: "/sidebars/Sidebar1",
@@ -62,7 +71,7 @@ const showcase = [
   },
   
   {
-    id: 7,
+    id: 8,
     name: "Sidebar2",
     description: "Premium Floating Sidebar - Glassmorphism Design",
     path: "/sidebars/Sidebar2",
@@ -70,7 +79,7 @@ const showcase = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Sidebar3",
     description: "Vertical Modern Tabs - TikTok Ready Animations!",
     path: "/sidebars/Sidebar3",
@@ -78,7 +87,7 @@ const showcase = [
   },
 
   {
-    id: 9,
+    id: 10,
     name: "Sidebar4",
     description: "Category Explorer - Premium Mesh Design!",
     path: "/sidebars/Sidebar4",
