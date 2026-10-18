@@ -17,6 +17,7 @@ import WeatherPage from "./components/weather/WeatherPage";
 import Button1 from "./components/buttons/Button1/Button1";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import SpendMoney from "./components/redux/spendmoney/SpendMoney";
 
 const showcase = [
   {
@@ -118,7 +119,14 @@ const showcase = [
     description: "Premium Glassmorphism Notes App - TikTok Ready!",
     path: "/redux/notesapp/NotesApp1",
     element: <NotesApp1 />,
-  }
+  },
+  {
+  id: 14,
+    name: "SpendMoney1",
+    description: "Spend Bill Gates' Money - Redux Shopping App",
+    path: "/redux/spendmoney/SpendMoney",
+    element: <SpendMoney />,
+  },
 ];
 
 const routes = showcase.map((item) => ({
