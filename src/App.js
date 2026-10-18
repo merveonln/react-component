@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ShowCase from "./components/ShowCase";
+import EmojiSearchApp from "./components/emoji-search-app-test/EmojiSearchApp";
 import Todo from "./components/todos/Todo1/Todo1";
 import Accordion1 from "./components/accordions/Accordion1/Accordion1";
 import Accordion2 from "./components/accordions/Accordion2/Accordion2";
@@ -93,6 +94,13 @@ const showcase = [
     path: "/sidebars/Sidebar4",
     element: <Sidebar4 />,
   },
+  {
+    id: 11,
+    name: "Emoji Search App",
+    description: "Search and copy emojis easily",
+    path: "/emoji-search",
+    element: <EmojiSearchApp />,
+  }
 ];
 
 const routes = showcase.map((item) => ({

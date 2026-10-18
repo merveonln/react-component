@@ -1,0 +1,126 @@
+.emoji-page {
+    min-height: 100vh;
+    padding: 28px 16px;
+    background:
+        radial-gradient(circle at 10% 0%, rgba(250, 204, 21, 0.35), transparent 35%),
+        radial-gradient(circle at 90% 0%, rgba(56, 189, 248, 0.22), transparent 30%),
+        linear-gradient(180deg, #111827 0%, #1f2937 100%);
+}
+
+.emoji-shell {
+    max-width: 980px;
+    margin: 0 auto;
+    background: #f8fafc;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 24px 64px rgba(2, 6, 23, 0.28);
+}
+
+.emoji-title {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.1;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.emoji-search-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    background: #fff;
+    color: #0f172a;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.emoji-search-input:focus {
+    outline: none;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.2);
+}
+
+.emoji-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.emoji-item {
+    margin-top: 10px;
+}
+
+.emoji-button {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    border: 1px solid #dbe3ee;
+    border-radius: 12px;
+    padding: 12px 14px;
+    background: #ffffff;
+    color: #0f172a;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.emoji-button:hover {
+    transform: translateY(-1px);
+    border-color: #93c5fd;
+    box-shadow: 0 10px 24px rgba(59, 130, 246, 0.15);
+}
+
+.emoji-button:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+.emoji-symbol {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.emoji-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.emoji-copy-hint {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 680px) {
+    .emoji-page {
+        padding: 16px 10px;
+    }
+
+    .emoji-shell {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .emoji-button {
+        grid-template-columns: 42px 1fr;
+        grid-template-rows: auto auto;
+        gap: 4px 8px;
+    }
+
+    .emoji-copy-hint {
+        grid-column: 2;
+        font-size: 0.82rem;
+    }
+}
