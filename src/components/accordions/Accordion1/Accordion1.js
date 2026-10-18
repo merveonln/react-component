@@ -3,7 +3,6 @@ import "./style.css";
 
 const Accordion1 = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const accordionData = [
     {
@@ -55,8 +54,6 @@ const Accordion1 = () => {
           <div 
             className={`one-accordion ${openIndex === index ? "one-active" : ""}`} 
             key={item.id}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
           >
             <div 
               className="one-accordion-header" 

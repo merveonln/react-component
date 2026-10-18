@@ -17,17 +17,17 @@ const index = () => {
         </div>
 
         <div className="footer-right">
-          <a href="#">Gizlilik</a>
-          <a href="#">Kullanım Şartları</a>
-          <a href="#">İletişim</a>
+          <a href="#/">Gizlilik</a>
+          <a href="#/">Kullanım Şartları</a>
+          <a href="#/">İletişim</a>
         </div>
       </div>
 
       <div className="footer-socials">
-        <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-        <a href="#" aria-label="Instagram"><FaInstagram /></a>
-        <a href="#" aria-label="Twitter"><FaTwitter /></a>
-        <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
+        <a href="#/" aria-label="Facebook"><FaFacebookF /></a>
+        <a href="#/" aria-label="Instagram"><FaInstagram /></a>
+        <a href="#/" aria-label="Twitter"><FaTwitter /></a>
+        <a href="#/" aria-label="LinkedIn"><FaLinkedinIn /></a>
       </div>
     </footer>
   )

@@ -39,19 +39,22 @@ function List({ todos, handleToggleAllChange, handleTodoChange, handleDeleteTodo
           <li>
             <a 
               className={activeFilter === 'all' ? 'selected' : ''}
-              onClick={() => handleFilterChange('all')}
+              href="#/"
+              onClick={(e) => { e.preventDefault(); handleFilterChange('all'); }}
             >All</a>
           </li>
           <li>
             <a 
               className={activeFilter === 'active' ? 'selected' : ''}
-              onClick={() => handleFilterChange('active')}
+              href="#/"
+              onClick={(e) => { e.preventDefault(); handleFilterChange('active'); }}
             >Aktif</a>
           </li>
           <li>
             <a 
               className={activeFilter === 'completed' ? 'selected' : ''}
-              onClick={() => handleFilterChange('completed')}
+              href="#/"
+              onClick={(e) => { e.preventDefault(); handleFilterChange('completed'); }}
             >Tamamlanmış</a>
           </li>
         </ul>
