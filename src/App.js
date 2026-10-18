@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import NotesApp1 from "./components/redux/notesapp/NotesApp1/NotesApp1";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ShowCase from "./components/ShowCase";
 import EmojiSearchApp from "./components/emoji-search-app-test/EmojiSearchApp";
@@ -14,6 +15,8 @@ import Sidebar3 from "./components/sidebars/Sidebar3/Sidebar3";
 import Sidebar4 from "./components/sidebars/Sidebar4/Sidebar4";
 import WeatherPage from "./components/weather/WeatherPage";
 import Button1 from "./components/buttons/Button1/Button1";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 const showcase = [
   {
@@ -108,6 +111,13 @@ const showcase = [
     description: "Premium Glassmorphism Button - TikTok Ready!",
     path: "/buttons/Button1",
     element: <Button1 />,
+  },
+  {
+    id: 13,
+    name: "NotesApp1",
+    description: "Premium Glassmorphism Notes App - TikTok Ready!",
+    path: "/redux/notesapp/NotesApp1",
+    element: <NotesApp1 />,
   }
 ];
 
@@ -126,5 +136,9 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  );
 }
