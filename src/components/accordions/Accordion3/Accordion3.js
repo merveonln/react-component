@@ -42,7 +42,6 @@ const accordionData = [
 
 function Accordion3() {
   const [activeId, setActiveId] = useState(null);
-  const [hoveredId, setHoveredId] = useState(null);
 
   const handleAccordionClick = (id) => {
     setActiveId(activeId === id ? null : id);
@@ -62,8 +61,6 @@ function Accordion3() {
               key={item.id}
               className={`accordion-item ${activeId === item.id ? "accordion-active" : ""}`}
               onClick={() => handleAccordionClick(item.id)}
-              onMouseEnter={() => setHoveredId(item.id)}
-              onMouseLeave={() => setHoveredId(null)}
               style={{
                 flex: activeId === item.id ? "3" : "1"
               }}
