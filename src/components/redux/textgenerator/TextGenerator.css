@@ -1,0 +1,132 @@
+.text-generator-page {
+    min-height: 100vh;
+    padding: 28px;
+    box-sizing: border-box;
+    background: #e9edf2;
+    color: #f2f2f2;
+}
+
+.text-generator {
+    width: min(100%, 1120px);
+    min-height: calc(100vh - 56px);
+    margin: 0 auto;
+    padding: 28px;
+    box-sizing: border-box;
+    background: #222;
+}
+
+.text-generator h1 {
+    margin: 0;
+    color: #f5f5f5;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.text-generator-divider {
+    height: 1px;
+    margin: 28px 0 24px;
+    background: #b7b7b7;
+}
+
+.text-generator-controls {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 24px;
+}
+
+.text-generator-field {
+    display: grid;
+    gap: 5px;
+    color: #e2e2e2;
+    font-size: 0.95rem;
+}
+
+.text-generator-field input,
+.text-generator-field select {
+    min-height: 38px;
+    box-sizing: border-box;
+    border: 1px solid #b9b9b9;
+    border-radius: 2px;
+    background: #fff;
+    color: #222;
+    font: inherit;
+}
+
+.text-generator-field input {
+    width: 172px;
+    padding: 5px 8px;
+}
+
+.text-generator-field select {
+    min-width: 76px;
+    padding: 5px 8px;
+}
+
+.text-generator-field input:focus-visible,
+.text-generator-field select:focus-visible {
+    outline: 2px solid #f59e76;
+    outline-offset: 2px;
+}
+
+.text-generator-output {
+    min-height: 260px;
+    padding: 36px 32px;
+    border-radius: 5px;
+    background: #303030;
+    color: #e1e1e1;
+    font-size: 1rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.text-generator-output p {
+    margin: 0 0 1.2em;
+}
+
+.text-generator-output p:last-child {
+    margin-bottom: 0;
+}
+
+.text-generator-message {
+    color: #b9c1cb;
+}
+
+.text-generator-error {
+    color: #ffaaa0;
+}
+
+.text-generator-notice {
+    margin: 12px 0 0;
+    color: #737e8d;
+    font-size: 0.88rem;
+}
+
+.generated-html {
+    margin: 0;
+    color: #b7d7b0;
+    font: 0.94rem/1.65 Consolas, Monaco, monospace;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+    .text-generator-page {
+        padding: 12px;
+    }
+
+    .text-generator {
+        min-height: calc(100vh - 24px);
+        padding: 22px 18px;
+    }
+
+    .text-generator-divider {
+        margin: 22px 0;
+    }
+
+    .text-generator-output {
+        min-height: 220px;
+        padding: 24px 18px;
+    }
+}

@@ -19,6 +19,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import SpendMoney from "./components/redux/spendmoney/SpendMoney";
 import MemoryGame from "./components/redux/memorygame/MemoryGame";
+import TextGenerator from "./components/redux/textgenerator/TextGenerator";
 
 const showcase = [
   {
@@ -131,9 +132,16 @@ const showcase = [
   {
     id: 15,
     name: "Memory Game",
-    description: "Redux ile gelistirilmis kart eslestirme oyunu",
+    description: "Redux ile geliştirilmiş kart eşleştirme oyunu",
     path: "/redux/memorygame",
     element: <MemoryGame />,
+  },
+  {
+    id: 16,
+    name: "Text Generator",
+    description: "Paragraf sayısını ve çıktı biçimini seçerek metin oluştur",
+    path: "/redux/textgenerator",
+    element: <TextGenerator />,
   },
 ];
 
