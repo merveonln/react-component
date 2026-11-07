@@ -103,7 +103,7 @@ const textGeneratorSlice = createSlice({
         state.content = action.payload.content;
         state.error = "";
         state.notice = action.payload.isFallback
-          ? "örnek metin yerel olarak gÖsteriliyor; API ŞU anda yanIT vermiyor."
+          ? "örnek metin yerel olarak gösteriliyor; API ŞU anda yanıt vermiyor."
           : "";
         state.currentRequestId = undefined;
       })
