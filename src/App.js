@@ -18,6 +18,7 @@ import Button1 from "./components/buttons/Button1/Button1";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import SpendMoney from "./components/redux/spendmoney/SpendMoney";
+import MemoryGame from "./components/redux/memorygame/MemoryGame";
 
 const showcase = [
   {
@@ -126,6 +127,13 @@ const showcase = [
     description: "Spend Bill Gates' Money - Redux Shopping App",
     path: "/redux/spendmoney/SpendMoney",
     element: <SpendMoney />,
+  },
+  {
+    id: 15,
+    name: "Memory Game",
+    description: "Redux ile gelistirilmis kart eslestirme oyunu",
+    path: "/redux/memorygame",
+    element: <MemoryGame />,
   },
 ];
 
