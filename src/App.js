@@ -20,6 +20,7 @@ import { store } from "./redux/store";
 import SpendMoney from "./components/redux/spendmoney/SpendMoney";
 import MemoryGame from "./components/redux/memorygame/MemoryGame";
 import TextGenerator from "./components/redux/textgenerator/TextGenerator";
+import MarkdownPreviewer from "./components/redux/markdownpreview/MarkdownPreviewer";
 
 const showcase = [
   {
@@ -142,6 +143,13 @@ const showcase = [
     description: "Paragraf sayısını ve çıktı biçimini seçerek metin oluştur",
     path: "/redux/textgenerator",
     element: <TextGenerator />,
+  },
+  {
+    id: 17,
+    name: "Markdown Previewer",
+    description: "Markdown metnini canlı olarak ön izle",
+    path: "/redux/markdown-preview",
+    element: <MarkdownPreviewer />,
   },
 ];
 
