@@ -5,6 +5,7 @@ import memoryGameReducer from "./memoryGameSlice";
 import textGeneratorReducer from "./textGeneratorSlice";
 import covidTrackerReducer from "./covidTrackerSlice";
 import weatherReducer from "./weatherSlice";
+import typingSpeedReducer from "./typingSpeedSlice";
 
 export const store = configureStore({
   reducer: {
@@ -14,5 +15,6 @@ export const store = configureStore({
     textGenerator: textGeneratorReducer,
     covidTracker: covidTrackerReducer,
     weather: weatherReducer,
+    typingSpeed: typingSpeedReducer,
   },
 });

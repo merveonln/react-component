@@ -23,6 +23,7 @@ import TextGenerator from "./components/redux/textgenerator/TextGenerator";
 import MarkdownPreviewer from "./components/redux/markdownpreview/MarkdownPreviewer";
 import CovidTracker from "./components/redux/covidtracker/CovidTracker";
 import ReduxWeatherApp from "./components/redux/weatherapp/WeatherApp";
+import TypingSpeedApp from "./components/redux/typingspeed/TypingSpeedApp";
 
 const showcase = [
   {
@@ -166,6 +167,13 @@ const showcase = [
     description: "Redux ve Open-Meteo ile Türkiye için 7 günlük hava tahmini",
     path: "/redux/weatherapp",
     element: <ReduxWeatherApp />,
+  },
+  {
+    id: 20,
+    name: "Typing Speed Test",
+    description: "60 saniyede klavye hızını ve doğruluğunu ölç",
+    path: "/redux/typing-speed",
+    element: <TypingSpeedApp />,
   },
 ];
 
