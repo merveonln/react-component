@@ -4,6 +4,7 @@ import spendMoneyReducer from "./spendMoneySlice";
 import memoryGameReducer from "./memoryGameSlice";
 import textGeneratorReducer from "./textGeneratorSlice";
 import covidTrackerReducer from "./covidTrackerSlice";
+import weatherReducer from "./weatherSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,5 +13,6 @@ export const store = configureStore({
     memoryGame: memoryGameReducer,
     textGenerator: textGeneratorReducer,
     covidTracker: covidTrackerReducer,
+    weather: weatherReducer,
   },
 });

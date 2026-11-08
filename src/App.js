@@ -22,6 +22,7 @@ import MemoryGame from "./components/redux/memorygame/MemoryGame";
 import TextGenerator from "./components/redux/textgenerator/TextGenerator";
 import MarkdownPreviewer from "./components/redux/markdownpreview/MarkdownPreviewer";
 import CovidTracker from "./components/redux/covidtracker/CovidTracker";
+import ReduxWeatherApp from "./components/redux/weatherapp/WeatherApp";
 
 const showcase = [
   {
@@ -158,6 +159,13 @@ const showcase = [
     description: "Dünya ve ülkelere göre raporlanan COVID-19 verileri",
     path: "/redux/covid-tracker",
     element: <CovidTracker />,
+  },
+  {
+    id: 19,
+    name: "Türkiye Weather App",
+    description: "Redux ve Open-Meteo ile Türkiye için 7 günlük hava tahmini",
+    path: "/redux/weatherapp",
+    element: <ReduxWeatherApp />,
   },
 ];
 
