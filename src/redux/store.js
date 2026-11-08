@@ -6,6 +6,7 @@ import textGeneratorReducer from "./textGeneratorSlice";
 import covidTrackerReducer from "./covidTrackerSlice";
 import weatherReducer from "./weatherSlice";
 import typingSpeedReducer from "./typingSpeedSlice";
+import turkishDraughtsReducer from "./turkishDraughtsSlice";
 
 export const store = configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export const store = configureStore({
     covidTracker: covidTrackerReducer,
     weather: weatherReducer,
     typingSpeed: typingSpeedReducer,
+    turkishDraughts: turkishDraughtsReducer,
   },
 });

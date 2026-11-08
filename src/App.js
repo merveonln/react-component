@@ -24,6 +24,7 @@ import MarkdownPreviewer from "./components/redux/markdownpreview/MarkdownPrevie
 import CovidTracker from "./components/redux/covidtracker/CovidTracker";
 import ReduxWeatherApp from "./components/redux/weatherapp/WeatherApp";
 import TypingSpeedApp from "./components/redux/typingspeed/TypingSpeedApp";
+import TurkishDraughts from "./components/redux/turkishdraughts/TurkishDraughts";
 
 const showcase = [
   {
@@ -174,6 +175,13 @@ const showcase = [
     description: "60 saniyede klavye hızını ve doğruluğunu ölç",
     path: "/redux/typing-speed",
     element: <TypingSpeedApp />,
+  },
+  {
+    id: 21,
+    name: "Türk Daması",
+    description: "Redux ile iki kişilik Türk Daması",
+    path: "/redux/turkish-draughts",
+    element: <TurkishDraughts />,
   },
 ];
 
