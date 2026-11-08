@@ -3,6 +3,7 @@ import notesReducer from "./notesSlice";
 import spendMoneyReducer from "./spendMoneySlice";
 import memoryGameReducer from "./memoryGameSlice";
 import textGeneratorReducer from "./textGeneratorSlice";
+import covidTrackerReducer from "./covidTrackerSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export const store = configureStore({
     spendMoney: spendMoneyReducer,
     memoryGame: memoryGameReducer,
     textGenerator: textGeneratorReducer,
+    covidTracker: covidTrackerReducer,
   },
 });

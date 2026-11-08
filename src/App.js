@@ -21,6 +21,7 @@ import SpendMoney from "./components/redux/spendmoney/SpendMoney";
 import MemoryGame from "./components/redux/memorygame/MemoryGame";
 import TextGenerator from "./components/redux/textgenerator/TextGenerator";
 import MarkdownPreviewer from "./components/redux/markdownpreview/MarkdownPreviewer";
+import CovidTracker from "./components/redux/covidtracker/CovidTracker";
 
 const showcase = [
   {
@@ -150,6 +151,13 @@ const showcase = [
     description: "Markdown metnini canlı olarak ön izle",
     path: "/redux/markdown-preview",
     element: <MarkdownPreviewer />,
+  },
+  {
+    id: 18,
+    name: "COVID-19 Tracker",
+    description: "Dünya ve ülkelere göre raporlanan COVID-19 verileri",
+    path: "/redux/covid-tracker",
+    element: <CovidTracker />,
   },
 ];
 

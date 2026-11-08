@@ -1,0 +1,353 @@
+.covid-page {
+    min-height: 100vh;
+    padding: 38px 22px 56px;
+    box-sizing: border-box;
+    color: #242d32;
+    background:
+        radial-gradient(ellipse at 12% 0%, rgba(244, 202, 149, 0.28), transparent 34%),
+        #f3f5f4;
+}
+
+.covid-dashboard {
+    width: min(100%, 1180px);
+    margin: 0 auto;
+}
+
+.covid-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.covid-eyebrow,
+.covid-section-kicker {
+    display: block;
+    margin: 0 0 8px;
+    color: #87918f;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+}
+
+.covid-header h1 {
+    margin: 0;
+    color: #202b30;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.1;
+}
+
+.covid-header-copy {
+    margin: 10px 0 0;
+    color: #727d80;
+    font-size: 0.98rem;
+}
+
+.covid-live-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 13px;
+    border: 1px solid #dfe7e2;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.65);
+    color: #64736d;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.covid-live-indicator span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #45ac85;
+    box-shadow: 0 0 0 4px rgba(69, 172, 133, 0.14);
+}
+
+.covid-error {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 13px 16px;
+    border: 1px solid #f1c5ba;
+    border-radius: 9px;
+    background: #fff0ec;
+    color: #8c4231;
+}
+
+.covid-error button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    border: 1px solid #e7b0a3;
+    border-radius: 6px;
+    background: #fffaf8;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.covid-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.covid-stat-card {
+    min-width: 0;
+    padding: 19px;
+    border: 1px solid #e6e9e7;
+    border-top: 3px solid var(--stat-tone);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(38, 48, 47, 0.035);
+}
+
+.covid-stat-card.cases {
+    --stat-tone: #e47758;
+}
+
+.covid-stat-card.recovered {
+    --stat-tone: #39a78b;
+}
+
+.covid-stat-card.deaths {
+    --stat-tone: #7e8390;
+}
+
+.covid-stat-card.active {
+    --stat-tone: #e2ac45;
+}
+
+.covid-stat-topline {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 24px;
+}
+
+.covid-stat-icon {
+    display: grid;
+    place-items: center;
+    color: var(--stat-tone);
+}
+
+.covid-stat-title {
+    overflow: hidden;
+    color: #6d787c;
+    font-size: 0.83rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.covid-stat-value {
+    display: block;
+    margin: 16px 0 10px;
+    color: #202a30;
+    font-size: clamp(1.45rem, 2.6vw, 2.1rem);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+}
+
+.covid-stat-updated {
+    display: block;
+    overflow: hidden;
+    color: #9aa2a2;
+    font-size: 0.72rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.covid-country-control {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    margin: 22px 0 20px;
+    padding: 18px 20px;
+    border: 1px solid #e4e9e6;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.covid-country-control>div {
+    margin-right: auto;
+}
+
+.covid-country-control h2 {
+    margin: 0;
+    color: #28353a;
+    font-size: 1.2rem;
+}
+
+.covid-country-control label {
+    color: #6d787c;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.covid-country-control select {
+    width: min(280px, 42vw);
+    min-height: 42px;
+    padding: 0 36px 0 12px;
+    border: 1px solid #d6ded9;
+    border-radius: 6px;
+    background: #fbfcfb;
+    color: #28353a;
+    font: inherit;
+}
+
+.covid-country-control select:focus-visible {
+    outline: 2px solid rgba(57, 167, 139, 0.4);
+    outline-offset: 2px;
+}
+
+.covid-chart-section {
+    padding: 22px 22px 14px;
+    border: 1px solid #e4e9e6;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.covid-chart-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.covid-chart-heading h2 {
+    margin: 0;
+    color: #28353a;
+    font-size: 1.18rem;
+}
+
+.covid-date-range {
+    margin: 7px 0 0;
+    color: #818b8c;
+    font-size: 0.76rem;
+}
+
+.covid-chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+    color: #707b7e;
+    font-size: 0.74rem;
+}
+
+.covid-chart-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.covid-chart-legend i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.legend-cases {
+    background: #e47758;
+}
+
+.legend-recovered {
+    background: #39a78b;
+}
+
+.legend-deaths {
+    background: #6e7481;
+}
+
+.legend-active {
+    background: #e2ac45;
+}
+
+.covid-chart {
+    width: 100%;
+    height: 340px;
+    margin-top: 20px;
+    color: #788387;
+    font-size: 0.76rem;
+}
+
+.covid-chart-message {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.covid-source-note {
+    margin: 12px 0 0;
+    color: #9aa2a2;
+    font-size: 0.72rem;
+    line-height: 1.5;
+}
+
+.covid-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: #87918f;
+    font-size: 0.78rem;
+}
+
+@media (max-width: 900px) {
+    .covid-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .covid-page {
+        padding: 24px 14px 36px;
+    }
+
+    .covid-header {
+        flex-direction: column;
+        margin-bottom: 22px;
+    }
+
+    .covid-country-control {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .covid-country-control select {
+        width: 100%;
+    }
+
+    .covid-chart-section {
+        padding: 18px 14px 12px;
+    }
+
+    .covid-chart-heading {
+        flex-direction: column;
+    }
+
+    .covid-chart-legend {
+        justify-content: flex-start;
+    }
+
+    .covid-chart {
+        height: 280px;
+    }
+}
+
+@media (max-width: 420px) {
+    .covid-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .covid-error {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
